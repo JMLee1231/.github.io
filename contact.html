@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Jacob M. Lee</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="contact.js" defer></script>
   </head>
   <body>
     <nav class="navbar" aria-label="Main navigation">
@@ -13,7 +14,12 @@
     </nav>
     <main>
       <header class="page-header"><p class="eyebrow">Contact</p><h1 class="page-title">Let’s talk.</h1><p>For opportunities, collaborations, or a thoughtful conversation, reach me at <a href="mailto:JLee1231@calpoly.edu">JLee1231@calpoly.edu</a> or leave a note below.</p><p class="contact-social"><a href="https://github.com/JMLee1231" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/jacob-lee-8314b5282/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></p></header>
-      <form id="contact-form">
+      <p id="form-confirmation" class="form-confirmation" role="status" hidden>Thanks—your message has been sent. I’ll be in touch soon.</p>
+      <form id="contact-form" action="https://formsubmit.co/JLee1231@calpoly.edu" method="POST">
+        <input type="hidden" name="_next" value="https://jmlee1231.github.io/.github.io/contact.html?sent=true">
+        <input type="hidden" name="_subject" value="New message from Jacob M. Lee's website">
+        <input type="hidden" name="_template" value="table">
+        <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
         <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
         <div class="form-row"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>

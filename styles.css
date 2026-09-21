@@ -79,7 +79,7 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
   line-height: 0.98;
 }
 
-.hero h1 { max-width: 760px; font-size: clamp(3.35rem, 8vw, 6.7rem); }
+.hero h1 { max-width: 760px; font-size: clamp(2.5rem, 3.5vw, 3.25rem); }
 .hero-copy { max-width: 620px; margin: 2rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); }
 
 .hero-links { display: flex; align-items: center; gap: 1.5rem; margin-top: 2.25rem; }
@@ -128,6 +128,8 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 .course-list li, .skill-list li { padding: 0.35rem 0.6rem; border: 1px solid var(--rule); font-size: 0.85rem; }
 
 #contact-form { display: grid; gap: 1.5rem; max-width: 620px; }
+.form-confirmation { max-width: 620px; margin: 0 0 1.5rem; padding: 0.9rem 1rem; color: #245b3b; background: #e7f0e8; border-left: 3px solid #3e7b54; font-size: 0.92rem; }
+.honeypot { display: none; }
 .form-row { display: grid; gap: 0.45rem; }
 label { font-size: 0.88rem; font-weight: 600; }
 input, textarea { width: 100%; padding: 0.75rem 0; color: var(--ink); background: transparent; font: inherit; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
