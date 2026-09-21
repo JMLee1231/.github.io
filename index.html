@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | J Lee</title>
+    <title>J. Lee — Personal Website</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav class="navbar" aria-label="Main navigation">
-      <h1 class="logo"><a href="index.html">J Lee</a></h1>
+      <a class="wordmark" href="index.html">J. Lee</a>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -18,17 +18,21 @@
       </ul>
     </nav>
     <main>
-      <h1 class="page-title">Hello, I’m J Lee.</h1>
-      <div class="about">
-        <div class="about-image">
-          <img src="profile.svg" alt="Abstract blue profile illustration" width="240" height="240">
+      <section class="hero" aria-labelledby="intro-heading">
+        <p class="eyebrow">Student · Developer · Lifelong learner</p>
+        <h1 id="intro-heading">I make clear, useful things for the web.</h1>
+        <p class="hero-copy">I’m J. Lee, a student building a thoughtful body of work in software and design. This site is a place to share what I’m learning and what I’m making along the way.</p>
+        <div class="hero-links">
+          <a class="button" href="portfolio.html">View my work</a>
+          <a class="text-link" href="contact.html">Get in touch <span aria-hidden="true">→</span></a>
         </div>
-        <div class="about-text">
-          <p>I’m a student and aspiring developer who enjoys building thoughtful, useful experiences for the web.</p>
-          <p>I’m excited to keep learning, create meaningful projects, and share my work here.</p>
-        </div>
-      </div>
+      </section>
+      <section class="intro-grid" aria-label="Site overview">
+        <div><p class="eyebrow">01</p><h2>Work</h2><p>A growing collection of projects built with care and curiosity.</p><a class="text-link" href="portfolio.html">Explore projects <span aria-hidden="true">→</span></a></div>
+        <div><p class="eyebrow">02</p><h2>Background</h2><p>My education, skills, and the experiences shaping how I work.</p><a class="text-link" href="resume.html">Read my resume <span aria-hidden="true">→</span></a></div>
+        <div><p class="eyebrow">03</p><h2>Notes</h2><p>Ideas, progress, and lessons collected as I learn in public.</p><a class="text-link" href="blog.html">Visit the blog <span aria-hidden="true">→</span></a></div>
+      </section>
     </main>
-    <footer class="footer">© 2023 J Lee | All Rights Reserved</footer>
+    <footer class="footer"><span>© 2026 J. Lee</span><a href="contact.html">Let’s connect</a></footer>
   </body>
 </html>
