@@ -95,8 +95,12 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 .page-title { font-size: clamp(3rem, 6vw, 5rem); }
 .page-header > p:last-child { margin: 1.4rem 0 0; color: var(--muted); font-size: 1.1rem; }
 
-.project { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: 3rem 0 6rem; border-top: 1px solid var(--rule); }
+.project { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: 3rem 0; border-top: 1px solid var(--rule); }
+.project-list { padding-bottom: 5rem; }
 .project-preview { display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 1.35; padding: 1.5rem; color: #fff; background: #263a34; text-decoration: none; }
+.map-preview { background: #263a34; }
+.access-preview { background: #7a5537; }
+.research-preview { background: #304b6d; }
 .project-preview span { font-family: var(--serif); font-size: clamp(3rem, 8vw, 6rem); line-height: 1; }
 .project-preview small { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .project-meta { margin: 0 0 0.7rem; color: var(--accent); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
@@ -104,7 +108,9 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 .project-description { margin: 1rem 0 1.25rem; color: var(--muted); }
 
 .resume, #contact-form { max-width: 780px; padding-bottom: 6rem; }
-.download-link { display: inline-block; margin: -1.5rem 0 3rem; padding-bottom: 0.2rem; color: var(--accent-dark); font-size: 0.9rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+.resume-downloads { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: -1.5rem 0 3rem; }
+.download-link { display: inline-block; padding-bottom: 0.2rem; color: var(--accent-dark); font-size: 0.9rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+.download-link span { margin-left: 0.35rem; color: var(--muted); font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; }
 .section { padding: 2rem 0; border-top: 1px solid var(--rule); }
 .section-title { margin: 0 0 1rem; font-family: var(--serif); font-size: 1.65rem; font-weight: 500; letter-spacing: -0.025em; }
 .entry + .entry { margin-top: 1.5rem; }
