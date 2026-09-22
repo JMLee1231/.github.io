@@ -106,7 +106,7 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 
 .page-header { max-width: 680px; padding: clamp(4.5rem, 10vw, 7rem) 0 3.5rem; }
 .page-title { font-size: clamp(3rem, 6vw, 5rem); }
-.page-header > p:last-child { margin: 1.4rem 0 0; color: var(--muted); font-size: 1.1rem; }
+.page-header > p:last-child, .about-header > p { margin: 1.4rem 0 0; color: var(--muted); font-size: 1.1rem; }
 
 .project { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: 3rem 0; border-top: 1px solid var(--rule); }
 .project-list { padding-bottom: 5rem; }
