@@ -110,10 +110,12 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 
 .project { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: 3rem 0; border-top: 1px solid var(--rule); }
 .project-list { padding-bottom: 5rem; }
-.project-preview { display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 1.35; padding: 1.5rem; color: #fff; background: #263a34; text-decoration: none; }
+.project-preview { display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 1.35; overflow: hidden; background: #263a34; }
 .map-preview { background: #263a34; }
 .access-preview { background: #7a5537; }
 .research-preview { background: #304b6d; }
+.project-preview img { width: 100%; height: 100%; object-fit: contain; }
+.map-preview img { object-fit: cover; }
 .project-preview span { font-family: var(--serif); font-size: clamp(3rem, 8vw, 6rem); line-height: 1; }
 .project-preview small { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .project-meta { margin: 0 0 0.7rem; color: var(--accent); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
