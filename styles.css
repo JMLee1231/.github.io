@@ -115,6 +115,8 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 .access-preview { background: #7a5537; }
 .research-preview { background: #304b6d; }
 .project-preview img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.research-preview img { padding: 1.5rem; object-fit: contain; background: #f7f7f5; }
+.map-preview img { object-fit: contain; background: #dfe3df; }
 .project-preview span { font-family: var(--serif); font-size: clamp(3rem, 8vw, 6rem); line-height: 1; }
 .project-preview small { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .project-meta { margin: 0 0 0.7rem; color: var(--accent); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
