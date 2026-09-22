@@ -30,12 +30,17 @@ a { color: inherit; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   width: min(1120px, calc(100% - 3rem));
   margin: 0 auto;
   padding: 1.7rem 0 1.35rem;
+  background: rgba(248, 247, 243, 0.96);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -114,6 +119,8 @@ main { width: min(1120px, calc(100% - 3rem)); min-height: calc(100vh - 180px); m
 .project-meta { margin: 0 0 0.7rem; color: var(--accent); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .project-name { margin: 0; font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.1; }
 .project-description { margin: 1rem 0 1.25rem; color: var(--muted); }
+.project-stack { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.project-stack span { margin-right: 0.5rem; color: var(--ink); font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; }
 
 .resume, #contact-form { max-width: 780px; padding-bottom: 6rem; }
 .resume-downloads { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: -1.5rem 0 3rem; }
@@ -140,7 +147,7 @@ input[type="submit"] { width: fit-content; margin-top: 0.35rem; padding: 0.75rem
 input[type="submit"]:hover { background: var(--accent-dark); }
 
 .empty-state { max-width: 720px; padding: 2.5rem 0 6rem; border-top: 1px solid var(--rule); }
-.empty-state h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+.empty-state h2 { font-size: clamp(3rem, 6vw, 5rem); }
 .empty-state > p:last-child { max-width: 480px; color: var(--muted); }
 
 .footer { display: flex; justify-content: space-between; width: min(1120px, calc(100% - 3rem)); margin: 0 auto; padding: 1.5rem 0 2.25rem; color: var(--muted); border-top: 1px solid var(--rule); font-size: 0.8rem; }
